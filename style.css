@@ -1,0 +1,158 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 150px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #5e5e5e;
+    margin-left: 5px;
+}
+
+/* Microsoft Logo Grid */
+.ms-color {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.ms-red { background-color: #F25022; }
+.ms-green { background-color: #7FBA00; }
+.ms-blue { background-color: #00A4EF; }
+.ms-yellow { background-color: #FFB900; }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #262626;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00A4EF; /* Microsoft Blue */
+}
+
+/* Hero Section */
+.hero {
+    padding: 6rem 0;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-top: 1rem;
+}
+
+/* Grid & Cards */
+.bg-light {
+    background-color: #fbfbfb;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 2rem;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #00A4EF;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: #00A4EF;
+}
+
+/* Leadership List */
+.leadership-list {
+    list-style: none;
+}
+
+.leadership-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 2rem 0;
+    color: #666;
+    margin-top: 2rem;
+}
